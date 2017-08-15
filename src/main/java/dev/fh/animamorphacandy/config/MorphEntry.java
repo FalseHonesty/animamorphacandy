@@ -53,7 +53,7 @@ public class MorphEntry {
         int disguiseTime = 0;
         String disguiseName = (String) disguiseType.get(0);
 
-        if (!disguiseName.equalsIgnoreCase("null")) {
+        if (disguiseName != null) {
             disguiseDisguiseType = DisguiseType.valueOf(disguiseName.toUpperCase());
             disguiseTime = (int) disguiseType.get(1);
         }

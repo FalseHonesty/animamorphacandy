@@ -1,5 +1,6 @@
 package dev.fh.animamorphacandy;
 
+import dev.fh.animamorphacandy.commands.MorphCommand;
 import dev.fh.animamorphacandy.config.ConfigLoader;
 import dev.fh.animamorphacandy.listeners.EventListener;
 import lombok.Getter;
@@ -21,8 +22,9 @@ public class MorphPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        configLoader = new ConfigLoader(this);
-        listener = new EventListener(this);
+        this.configLoader = new ConfigLoader(this);
+        this.listener = new EventListener(this);
+        getCommand("morphs").setExecutor(new MorphCommand());
 
         plugin = this;
     }

@@ -25,6 +25,7 @@ public class ConfigLoader {
 
     public ArrayList<MorphEntry> loadConfig() {
         plugin.saveResource("config.yml", false);
+        plugin.reloadConfig();
         FileConfiguration config = plugin.getConfig();
 
         ArrayList<MorphEntry> morphEntries = new ArrayList<>();

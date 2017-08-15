@@ -3,10 +3,10 @@
 #   effects:
 #     - EFFECTNAME
 #     - TIME (in seconds)
-#     - AMPLIFIER
+#     - AMPLIFIER (0 based)
 #     - EFFECTNAME
 #     - TIME (in seconds)
-#     - AMPLIFIER
+#     - AMPLIFIER (0 based)
 #   morph:
 #     - ANIMALNAME (or null for no morph)
 #     - TIME (time until morph wears off, in seconds)
