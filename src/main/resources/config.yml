@@ -1,0 +1,22 @@
+# Follow this pattern when creating food effect configs
+# FOODNAME:
+#   effects:
+#     - EFFECTNAME
+#     - TIME (in seconds)
+#     - AMPLIFIER
+#     - EFFECTNAME
+#     - TIME (in seconds)
+#     - AMPLIFIER
+#   morph:
+#     - ANIMALNAME (or null for no morph)
+#     - TIME (time until morph wears off, in seconds)
+#
+# Example
+# cooked_beef:
+#   effects:
+#     - blindness
+#     - 5
+#     - 1
+#   morph:
+#     - ocelot
+#     - 20

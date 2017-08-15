@@ -1,0 +1,5 @@
+name: Animamorphacandy
+version: 1.0
+author: FalseHonesty
+main: dev.fh.animamorphacandy.MorphPlugin
+description: A plugin that morphs players and gives them effects after eating food
